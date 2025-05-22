@@ -12,23 +12,23 @@ def adventure():
 
 @app.route('/02')
 def digi02():
-       return render_template('./02.html')
+       return render_template('./02/02.html')
 
 @app.route('/tamers')
 def tamers():
-       return render_template('./tamers.html')
+       return render_template('./tamers/tamers.html')
 
 @app.route('/frontier')
 def frontier():
-       return render_template('./frontier.html')
+       return render_template('./frontier/frontier.html')
 
 @app.route('/savers')
 def savers():
-       return render_template('./savers.html')
+       return render_template('./savers/savers.html')
 
 @app.route('/ghost')
 def ghost():
-       return render_template('./ghost.html')
+       return render_template('./ghost/ghost.html')
 
 if __name__ == '__main__':
        app.run(debug=True)
