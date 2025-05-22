@@ -101,9 +101,6 @@ def gg_mundo():
 @app.route('/gg_digi')
 def gg_digi():
        return render_template('./ghost/gg_digi.html')
-@app.route('/gg_filme')
-def gg_filme():
-       return render_template('./ghost/gg_filme.html')
 
 if __name__ == '__main__':
        app.run(debug=True)
