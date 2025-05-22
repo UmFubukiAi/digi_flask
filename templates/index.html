@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
     <title>Digimundo - Página Inicial</title>
 </head>
 <body>
-    <p>Teste de página</p>
-    <a href="/adventure">Digimon Adventure</a>
-    <br>
-    <a href="/02">Digimon Adventure 02</a>
+    <header>
+        <h1>Bem-vinde ao Digimundo!</h1>
+        <p>Aproveite a estadia</p>
+    </header>
+    <main>
+        <h1>O Mundo Digital</h1>
+        <p>Digimon é uma franquia que ultrapassou ou bichinhos digitais e ingressou no mundo dos animes em 1999, e desde então possui novas temproadas, filmes, OVAs e muito mais!</p><br>
+        <p>Quer aprender mais sobre uma temporada específica? Escolha abaixo:</p>
+        <a href="/adventure">Digimon Adventure</a><br>
+        <a href="/02">Digimon Adventure 02</a><br>
+        <a href='/tamers'>Digimon Tamers</a><br>
+        <a href='/frontier'>Digimon Frontier</a><br>
+        <a href="/savers">Digimon Savers</a><br>
+        <a href="/ghost">Digimon Ghost Game</a>
+    </main>
+    <footer>
+        <p>Todos os direitos vão para Toei Animation e relacionados</p>
+    </footer>
 </body>
 </html>
