@@ -1,3 +1,13 @@
 body {
     background-image:url('../imgs/wpp.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header, footer {
+    background-color: lightblue; opacity: 0.5;
+}
+
+main {
+    background-color: white; opacity: 0.6;
 }
