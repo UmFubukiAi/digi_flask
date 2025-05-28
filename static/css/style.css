@@ -5,6 +5,10 @@ body {
 }
 
 header, footer {
+    text-align: center;
+    background-color: #0b7a75;
+    border-radius: 10px;
+    padding: 10px;
     background-color: lightblue; opacity: 0.5;
 }
 

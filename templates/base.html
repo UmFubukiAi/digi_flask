@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+    {% block titulo %}
+    {% endblock %}
+</head>
+<body>
+    {% block audio %}
+    {% endblock %}
+    <header>
+        {% block logo %}
+        {% endblock %}
+        <h1>Bem-vinde ao Digimundo!</h1>
+        <p>Aproveite a estadia</p>
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Todos os direitos vão para Toei Animation e relacionados</p>
+    </footer>
+</body>
+</html>
