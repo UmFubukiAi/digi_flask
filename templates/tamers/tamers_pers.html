@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+{% extends 'base.html' %}
+
+{% block titulo %}
     <title>Digimon Tamers - Personagens</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo_tamers.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="../static/audio/tamers_ost.mp3" type="audio/mpeg">
+    </audio>
+{% endblock %}

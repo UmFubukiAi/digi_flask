@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Digimundo - 02</title>
-</head>
-<body>
-    <p>Teste da página 02</p>
-    <a href="/02_mundo">Explicação de Mundo</a>
-    <a href="/02_pers">Personagens</a>
-    <a href="/02_digi">Digimons</a>
-    <a href="/02_filme">Filmes</a>
-    <a href="/">Voltar para a página principal</a>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block titulo %}
+    <title>Digimundo - Adventure 02</title>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo_02.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="../static/audio/02_ost.mp3" type="audio/mpeg">
+    </audio>
+{% endblock %}
+
+{% block nav %}
+    <nav>
+            <ul>
+            <li><a href="/02">Adventure</a></li>
+            <li><a href="/02_mundo">Mundo</a></li>
+            <li><a href="/02_pers">Personagens</a></li>
+            <li><a href="/02_digi">Digimons</a></li>
+            <li><a href="/02_filme">Filmes</a></li>
+            <li><a href='/'>Início</a></li>
+        </ul>
+    </nav>
+{% endblock %}
