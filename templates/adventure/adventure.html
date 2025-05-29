@@ -4,13 +4,24 @@
     <title>Digimundo - Adventure</title>
 {% endblock %}
 
+{% block nav %}
+    <ul>
+        <li><a href="/adventure">Início</a></li>
+        <li><a href="/adv_mundo">Mundo</a></li>
+        <li><a href="/adv_pers">Personagens</a></li>
+        <li><a href="/adv_digi">Digimons</a></li>
+        <li><a href="/adv_filme">Filmes</a></li>
+    </ul>
+{% endblock %}
+
 {% block main %}
     <h1>O início de tudo</h1>
-    <p>Digimon Adventure lançou em 1999 e criou a base para as diferentes temporadas que seguiram até hoje.</p><br>
+    <p>Digimon Adventure lançou em 1999 e criou a base para as diferentes temporadas que seguiram até hoje.</p>
     <p>Esta temporada conta a história de 8 crianças, chamadas de Digi-Escolhidas, que foram transportadas para um Mundo
     Digital, apelidado de Digimundo, e la encontraram parceiros Digimons, e embarcam em diversas aventuras, derrotando o 
-    mal e se tornando pessoas melhores ao superar obstáculos.</p><br>
+    mal e se tornando pessoas melhores ao superar obstáculos.</p>
     <p>Para entender sobre algo específico desta Temporada, escolha as opções abaixo:</p>
+    <p>Caso queira procurar informações sobre os filmes Adventure Tri, <a href="/tri">clique aqui.</a></p>
     <p>Caso queira procurar informações sobre o Reboot criado em 2020, <a href="/reboot">clique aqui.</a></p>
     <a href="/adv_mundo">Explicação de Mundo</a>
     <a href="/adv_pers">Personagens</a>

@@ -15,3 +15,15 @@ header, footer {
 main {
     background-color: white; opacity: 0.6;
 }
+
+nav {
+    border-radius: 5px;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    gap: 75px;
+    justify-content: center;
+    list-style-type: none;
+}
