@@ -1,19 +1,23 @@
 body {
-    background-image:url('../imgs/wpp.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: lightblue;
 }
 
 header, footer {
     text-align: center;
-    background-color: #0b7a75;
     border-radius: 10px;
     padding: 10px;
-    background-color: lightblue; opacity: 0.5;
+    background-color: lightcyan; opacity: 0.5;
 }
 
 main {
     background-color: white; opacity: 0.6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 nav {
@@ -28,7 +32,42 @@ ul {
     list-style-type: none;
 }
 
+.amostra {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.amostra .bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 180px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+}
+
+.amostra .bloco .wiki {
+    align-self: center;
+    padding: 10px;
+}
+
 .amostra .bloco .foto {
-    max-width: 100px;
-    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+}
+
+.amostra .bloco .foto img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    align-self: center;
+    margin: auto;
+    display: block;
 }
