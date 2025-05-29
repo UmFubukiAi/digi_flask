@@ -36,6 +36,63 @@ ul {
     align-self: center;
 }
 
+.img-button {
+  width: 200px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.img-button:hover {
+  opacity: 1;
+}
+
+.bg-img-1 {
+    background-image: url(../imgs/logo/logo_adv.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-2 {
+    background-image: url(../imgs/logo/logo_02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-3 {
+    background-image: url(../imgs/logo/logo_tamers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-4 {
+    background-image: url(../imgs/logo/logo_frontier.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-5 {
+    background-image: url(../imgs/logo/logo_savers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-6 {
+    background-image: url(../imgs/logo/logo_gg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .logo img {
     opacity: 0.5;
     height: 150px;
