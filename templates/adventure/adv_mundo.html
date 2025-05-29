@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+{% extends 'base.html' %}
+
+{% block titulo %}
     <title>Digimon Adventure - Mundo</title>
-</head>
-<body>
+{% endblock %}
+
+{% block main %}
     <h1>O Mundo Digital - O Equilíbrio</h1>
     <p>O "Digimundo" de Adventure possui características tanto fantasiosas, quanto reais. Era comum para nossos heróis, 
         andarem por aí e encontrarem Máquinas de Venda Automáticas, Postes de Luz, Trilhos de Trem e muitas outras coisas
@@ -42,5 +40,4 @@
     um sol radiante no topo.</p><br>
     <p><b>Luz:</b> Brasão utilizado por Hikari Yagami e sua parceira Tailmon. Simboliza não se deixar ser tentado pelas trevas do nosso coração, 
     como a tristeza e a raiva, sendo bondoso e gentil, não importa o que aconteça. Seu símbolo é um raio de luz dividido em 8 pontas.</p><br>
-</body>
-</html>
+{% endblock %}

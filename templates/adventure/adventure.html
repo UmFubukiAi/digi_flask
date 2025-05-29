@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+{% extends 'base.html' %}
+
+{% block titulo %}
     <title>Digimundo - Adventure</title>
-</head>
-<body>
+{% endblock %}
+
+{% block main %}
     <h1>O início de tudo</h1>
     <p>Digimon Adventure lançou em 1999 e criou a base para as diferentes temporadas que seguiram até hoje.</p><br>
     <p>Esta temporada conta a história de 8 crianças, chamadas de Digi-Escolhidas, que foram transportadas para um Mundo
@@ -19,5 +17,4 @@
     <a href="/adv_digi">Digimons</a>
     <a href="/adv_filme">Filmes</a>
     <a href="/">Voltar para a página principal</a>
-</body>
-</html>
+{% endblock %}
