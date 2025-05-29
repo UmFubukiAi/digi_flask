@@ -103,4 +103,4 @@ def gg_digi():
        return render_template('./ghost/gg_digi.html')
 
 if __name__ == '__main__':
-       app.run(debug=True)
+       app.run(debug=True, port='3001')
