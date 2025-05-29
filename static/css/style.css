@@ -36,6 +36,11 @@ ul {
     align-self: center;
 }
 
+.logo img {
+    opacity: 0.5;
+    height: 150px;
+}
+
 .amostra {
     background-color: lightblue;
     padding: 5px;
