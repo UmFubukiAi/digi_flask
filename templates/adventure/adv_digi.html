@@ -10,6 +10,19 @@
     </div>
 {% endblock %}
 
+{% block nav %}
+    <nav>
+            <ul>
+            <li><a href="/adventure">Adventure</a></li>
+            <li><a href="/adv_mundo">Mundo</a></li>
+            <li><a href="/adv_pers">Personagens</a></li>
+            <li><a href="/adv_digi">Digimons</a></li>
+            <li><a href="/adv_filme">Filmes</a></li>
+            <li><a href='/'>Início</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
 {% block audio %}
     <audio autoplay loop>
         <source src="../static/audio/adv_ost.mp3" type="audio/mpeg">
