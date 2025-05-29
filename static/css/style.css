@@ -6,7 +6,7 @@ header, footer {
     text-align: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: lightcyan; opacity: 0.5;
+    background-color: lightcyan;
 }
 
 main {
@@ -22,14 +22,18 @@ h1, h2 {
 
 nav {
     border-radius: 5px;
+    background-color: white;
+    height:50px;
 }
 
 ul {
     display:flex;
     flex-direction: row;
-    gap: 75px;
+    padding-top: 15px;
+    gap: 90px;
     justify-content: center;
     list-style-type: none;
+    align-self: center;
 }
 
 .amostra {
@@ -68,7 +72,7 @@ ul {
 
 .amostra .bloco .foto img {
     max-width: 100%;
-    height: auto;
+    height: 150px;
     padding: 10px;
     align-self: center;
     margin: auto;
