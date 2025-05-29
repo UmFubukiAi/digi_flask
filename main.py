@@ -24,6 +24,9 @@ def adv_filme():
 @app.route('/reboot')
 def reboot():
        return render_template('./adventure/reboot.html')
+@app.route('/tri')
+def tri():
+       return render_template('./adventure/tri.html')
 
 @app.route('/02')
 def digi02():
