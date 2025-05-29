@@ -10,7 +10,7 @@ header, footer {
 }
 
 main {
-    background-color: white; opacity: 0.6;
+    background-color: white;
     border-radius: 5px;
     padding: 10px;
     margin: 10px
@@ -46,8 +46,11 @@ ul {
     height: 180px;
     padding: 8px;
     border-radius: 10px;
-    background-color: white;
+    background-color: white; opacity: 1.0;
     margin: 5px;
+    border-style: solid;
+    border-color: lightskyblue;
+    border-width: 5px;
 }
 
 .amostra .bloco .wiki {
@@ -59,7 +62,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 180px;
 }
 
@@ -69,5 +72,4 @@ ul {
     padding: 10px;
     align-self: center;
     margin: auto;
-    display: block;
 }
