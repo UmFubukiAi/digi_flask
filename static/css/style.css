@@ -27,3 +27,8 @@ ul {
     justify-content: center;
     list-style-type: none;
 }
+
+.amostra .bloco .foto {
+    max-width: 100px;
+    max-height: 100px;
+}
