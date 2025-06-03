@@ -57,17 +57,27 @@ ul {
     align-self: center;
 }
 
-.carousel-caption {
-    bottom: 110px;
-    text-align: center;
-    border-style: solid;
-    border-color: black; opacity:0.5;
-    border-radius: 20px;
-    background-color: black;
+li {
+    font-family: 'Aldrich';
 }
 
-.aviso {
-    text-align: center;
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightblue;
+
+}
+
+nav img:hover {
+    color: lightblue;
+
+}
+
+.brand-text:hover {
+    color: lightblue;
 }
 
 .btn {
