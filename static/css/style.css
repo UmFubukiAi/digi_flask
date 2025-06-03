@@ -57,6 +57,14 @@ ul {
     align-self: center;
 }
 
+.aviso {
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
 .img-button {
   width: 200px;
   height: 60px;
@@ -114,18 +122,35 @@ ul {
     background-position: center;
 }
 
-.carrossel {
-    width: 800px;
+.bg-img-7 {
+    background-image: url(../imgs/logo/logo_tri.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-8 {
+    background-image: url(../imgs/logo/logo_reboot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .carousel {
-    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
 }
 
-.carousel-item {
+.carousel-inner {
+    max-height: 400px;
+}
+
+.carousel-item img {
     width: 100%;
-    height:700px;
+    height: 100%;
     object-fit: contain;
+    opacity: 0.5;
 }
 
 .logo img {
