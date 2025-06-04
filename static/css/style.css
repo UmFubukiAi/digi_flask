@@ -84,6 +84,17 @@ nav img:hover {
     margin-bottom: 10px;
 }
 
+.digi-btn {
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
 .img-button {
   width: 200px;
   height: 60px;
@@ -155,6 +166,62 @@ nav img:hover {
     background-position: center;
 }
 
+.digi-img-1 {
+    background-image: url(../imgs/adv/btn/agu_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-2 {
+    background-image: url(../imgs/adv/btn/gabu_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-3 {
+    background-image: url(../imgs/adv/btn/piyo_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-4 {
+    background-image: url(../imgs/adv/btn/tento_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-5 {
+    background-image: url(../imgs/adv/btn/pal_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-6 {
+    background-image: url(../imgs/adv/btn/goma_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-7 {
+    background-image: url(../imgs/adv/btn/pata_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-8 {
+    background-image: url(../imgs/adv/btn/tail_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .carousel {
     max-width: 800px;
     margin: 0 auto;
@@ -202,6 +269,10 @@ nav img:hover {
 .amostra .bloco .wiki {
     align-self: center;
     padding: 10px;
+}
+
+.amostra .bloco .wiki p {
+    text-align: justify;
 }
 
 .amostra .bloco .foto {
