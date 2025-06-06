@@ -238,6 +238,15 @@ nav img:hover {
     height: 100%;
     object-fit: contain;
     opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.carousel-item img:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
 }
 
 .logo img {
