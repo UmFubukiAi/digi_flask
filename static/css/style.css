@@ -286,16 +286,19 @@ nav img:hover {
 
 .amostra .bloco .foto {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 150px;
+    padding: 10px;
 }
 
 .amostra .bloco .foto img {
     max-height: 100%;
+    max-width: 200px;
     padding: 10px;
     align-self: center;
     margin: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
