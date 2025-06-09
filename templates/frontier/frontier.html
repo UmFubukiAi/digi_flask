@@ -18,13 +18,65 @@
 
 {% block nav %}
     <nav>
-            <ul>
-            <li><a href="/frontier">Adventure</a></li>
+        <ul>
+            <li>
+                <a class="navbar-brand" href="/">
+                    <img src="../static/imgs/logo/logo_digi.gif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span class="brand-text">Digimundo</span>
+                </a>
+            </li>
+            <li><a href="/frontier">Frontier</a></li>
             <li><a href="/frontier_mundo">Mundo</a></li>
             <li><a href="/frontier_pers">Personagens</a></li>
             <li><a href="/frontier_digi">Digimons</a></li>
             <li><a href="/frontier_filme">Filmes</a></li>
-            <li><a href='/'>Início</a></li>
         </ul>
     </nav>
+{% endblock %}
+
+{% block main %}
+    <h1>A nova geração</h1>
+    <p>Continuação direta de Adventure, se passando alguns anos no futuro, com os Digi-Escolhidos mais velhos, agora com novas crianças e 
+        novas formas de evolução. Para procurar algo específico sobre essa temporada, escolha abaixo:
+    </p>
+     <div class="carrossel">
+  <div id="carouselExampleIndicators" class="carousel slide size" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="/frontier_mundo">
+          <img class="d-block w-100 h-100" src="../static/imgs/adv/adv_mundo.png" alt="Primeiro Slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="/frontier_pers">
+          <img class="d-block w-100 h-100" src="../static/imgs/adv/adv_pers.png" alt="Segundo Slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="frontier_digi">
+          <img class="d-block w-100 h-100" src="../static/imgs/adv/adv_digi.png" alt="Terceiro Slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="frontier_filme">
+          <img class="d-block w-100 h-100" src="../static/imgs/adv/adv_filmes.png" alt="Quarto Slide">
+        </a>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  </div>
 {% endblock %}
