@@ -4,6 +4,12 @@
     <title>Digimundo - Página Inicial</title>
 {% endblock %}
 
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo.png">
+    </div>
+{% endblock %}
+
 {% block audio %}
     <audio autoplay loop>
         <source src="{{ url_for('static', filename='audio/bolero.mp3') }}" type='audio/mpeg'>
@@ -14,12 +20,16 @@
     <h1>O Mundo Digital</h1>
     <p>Digimon é uma franquia que ultrapassou ou bichinhos digitais e ingressou no mundo dos animes em 1999, e desde então possui novas temproadas, filmes, OVAs e muito mais!</p><br>
     <div class="d-flex flex-column align-items-center justify-content-center">
-        <p>Quer aprender mais sobre uma temporada específica? Escolha abaixo:</p>
-        <a href="/adventure" class="btn img-button bg-img-1"></a><br>
-        <a href="/02" class="btn img-button bg-img-2"></a><br>
-        <a href='/tamers' class="btn img-button bg-img-3"></a><br>
-        <a href='/frontier' class="btn img-button bg-img-4"></a><br>
-        <a href="/savers" class="btn img-button bg-img-5"></a><br>
-        <a href="/ghost" class="btn img-button bg-img-6"></a>
-    </div>
+        <p>Quer aprender mais sobre uma temporada específica? Escolha abaixo:</p><br>
+        <div class="d-flex flex-row align-items-center">
+            <a href="/adventure" class="btn img-button bg-img-1"></a><br>
+            <a href="/02" class="btn img-button bg-img-2"></a><br>
+            <a href='/tamers' class="btn img-button bg-img-3"></a><br>
+        </div> <br>
+        <div class="d-flex flex-row align-items-center">
+            <a href='/frontier' class="btn img-button bg-img-4"></a><br>
+            <a href="/savers" class="btn img-button bg-img-5"></a><br>
+            <a href="/ghost" class="btn img-button bg-img-6"></a>
+        </div>
+    </div><br>
 {% endblock %}
