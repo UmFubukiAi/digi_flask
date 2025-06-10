@@ -15,3 +15,65 @@
         <source src="../static/audio/02_ost.mp3" type="audio/mpeg">
     </audio>
 {% endblock %}
+
+{% block nav %}
+    <nav>
+        <ul>
+            <li>
+                <a class="navbar-brand" href="/">
+                    <img src="../static/imgs/logo/logo_digi.gif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span class="brand-text">Digimundo</span>
+                </a>
+            </li>
+            <li><a href="/02">Adventure 02</a></li>
+            <li><a href="/02_mundo">Mundo</a></li>
+            <li><a href="/02_pers">Personagens</a></li>
+            <li><a href="/02_digi">Digimons</a></li>
+            <li><a href="/02_filme">Filmes</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block main %}
+    <h1>A Continuação de uma História</h1>
+    <p>Abaixo estão listados todos os longas de Digimon 02, exibidos tanto na TV, quanto no Cinema.</p>
+    <div class="amostra">
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/adv/adv_filme1.png">
+            </div>
+            <div class="wiki">
+                <p><b>Vol.1 - Hurricane Touchdown:</b> A primeira Animação de Vídeo Original (OVA) lançado no Japão, uma semana antes do anime lançar na televisão, contando a 
+                    história antes da série animada, protagonizando os irmãos Yagami conhecendo Agumon pela primeira vez no Mundo Real.</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/adv/adv_filme2.png">
+            </div>
+            <div class="wiki">
+                <p><b>Vol.2 - Golden Digimentals:</b> Se passando alguns anos após o fim da série, este filme conta a história de 4 Digi-Escolhidos (Taichi, Koshiro, Yamato e Takeru) 
+                enfrentando Keramon, um digimon vírus que invadiu a internet. Aqui marca a primeira aparição oficial de Omegamon, a fusão entre WarGreymon e MetalGarurumon.</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/adv/adv_filme0.png">
+            </div>
+            <div class="wiki">
+                <p><b>Digimon - O Filme:</b> Uma versão censurada, criada nos Estados Unidos, que mescla os dois primeiros filmes (citados acima) e os primeiros filmes 
+                    de Adventure, mudando algumas partes e detalhes da história para caber dentro da duração dos filmes.</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/adv/adv_filme3.png">
+            </div>
+            <div class="wiki">
+                <p><b>The Beginning:</b> Uma sequência de 6 filmes que contam a história anos após o final de Adventure 02, com os 8 Digi-Escolhidos originais, 
+                agora adolescentes, lidando com uma nova ameaça: uma guerra entre os Deuses do Digimundo (Homeostase e Yggdrasil) ao lado de Mei, uma nova Digi-Escolhida e 
+                sua parceira Meicoomon. Para saber mais sobre esta série que foi separa em episódios depois de ser exibida nos cinemas, <a href="/tri">clique aqui.</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

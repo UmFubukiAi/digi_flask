@@ -222,6 +222,20 @@ nav img:hover {
     background-position: center;
 }
 
+.digi-img-9 {
+    background-image: url(../imgs/02/btn/vee_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digi-img-10 {
+    background-image: url(../imgs/02/btn/hawk_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .carousel {
     max-width: 800px;
     margin: 0 auto;
