@@ -1,0 +1,6 @@
+FLASK_APP=app:app
+SECRET_KEY=fubuki
+DB_USERNAME=sql10784481
+DB_PASSWORD=uk762FYuqd
+DB_HOST=sql10.freesqldatabase.com
+DB_DATABASE=sql10784481
