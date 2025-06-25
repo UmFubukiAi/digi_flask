@@ -8,16 +8,10 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path='config.flaskenv')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-db_usuario = os.environ.get('DB_USERNAME')
-db_senha = os.environ.get('DB_PASSWORD')
-db_host = os.environ.get('DB_HOST')
-db_mydb = os.environ.get('DB_DATABASE')
-
-conexao = f"mysql+pymysql://{db_usuario}:{db_senha}@{db_host}/{db_mydb}"
-app.config['SQLALCHEMY_DATABASE_URI'] = conexao
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+caminho_db = os.path.join(os.path.abspath(os.path.dirname(__file__)), os.getenv('DB_PATH'))
+app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{caminho_db}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
 db.init_app(app)
 migrate = Migrate(app, db)
 
