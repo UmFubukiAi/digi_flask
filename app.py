@@ -1,9 +1,10 @@
-from flask import Flask, render_template, flash, redirect
+from flask import Flask, render_template, flash, redirect, Blueprint
 import json
 from utils import db
 import os
 from flask_migrate import Migrate
 from models.usuario import Usuario
+from controllers.usuario_c import bp_usuarios    
 from dotenv import load_dotenv
 load_dotenv(dotenv_path='config.flaskenv')
 
@@ -14,6 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{caminho_db}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 migrate = Migrate(app, db)
+app.register_blueprint(bp_usuarios, url_prefix='/usuarios')
 
 @app.route('/')
 def index():
