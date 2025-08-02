@@ -19,8 +19,19 @@
         <br>
         <h1>Bem-vinde ao Digimundo!</h1>
         <p class="subtexto">Aproveite a estadia</p>
+            <nav>
+            <ul>
+                <li>
+                <a class="navbar-brand" href="/">
+                    <img src="../static/imgs/logo/logo_digi.gif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span class='brand-text'>Digimundo</span>
+                </a>
+            </li>
             {% block nav %}
             {% endblock %}
+            <li><a href="/create">Login/Cadastro</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
         {% block main %}

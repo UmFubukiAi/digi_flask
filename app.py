@@ -15,11 +15,21 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{caminho_db}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 migrate = Migrate(app, db)
-app.register_blueprint(bp_usuarios, url_prefix='/usuarios')
+app.register_blueprint(bp_usuarios, url_prefix='/usuario')
 
 @app.route('/')
 def index():
        return render_template('./index.html')
+
+@app.route('/create')
+def create():
+       return render_template('./create.html')
+@app.route('/recovery')
+def recovery():
+       return render_template('./recovery.html')
+@app.route('/update')
+def update():
+       return render_template('./update.html')
 
 @app.route('/adventure')
 def adventure():
