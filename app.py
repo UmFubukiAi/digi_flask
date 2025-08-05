@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, redirect, Blueprint
+from flask import Flask, render_template, flash, redirect, Blueprint, session
 import json
 from utils import db
 import os
@@ -30,6 +30,18 @@ def recovery():
 @app.route('/update')
 def update():
        return render_template('./update.html')
+@app.route('/login', methods=['GET','POST'])
+def login():
+       return render_template('./login.html')
+@app.route('/logout')
+def logout():
+       return render_template('./logout.html')
+@app.route('/perfil')
+def perfil():
+       return render_template('./perfil.html')
+@app.route('/conta')
+def conta():
+       return render_template('./conta.html')
 
 @app.route('/adventure')
 def adventure():

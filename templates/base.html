@@ -29,7 +29,11 @@
             </li>
             {% block nav %}
             {% endblock %}
-            <li><a href="/create">Login/Cadastro</a></li>
+            {% if session.get('usuario_id') %}
+                <li><a href="/perfil">Perfil</a></li>
+            {% else %}
+                <li><a href='/conta'>Login/Cadastro</a></li>
+            {% endif %}
         </ul>
     </nav>
     </header>
