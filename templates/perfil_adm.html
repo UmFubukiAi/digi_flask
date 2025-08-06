@@ -1,12 +1,39 @@
 {% extends 'base.html' %}
 
+{% block titulo %}
+    <title>Digimundo - Página Inicial</title>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='audio/bolero.mp3') }}" type='audio/mpeg'>
+    </audio>
+{% endblock %}
+
 {% block main %}
 
     <h2>Perfil do ADM</h2>
-    <p>ID: {{ adm.id }}</p>
-    <p>Nome: {{ adm.nome }}</p>
-    <p>Email: {{ adm.email }}</p>
-    <a href='/escolha_delete'>Gerenciamento de Contas</a>
-    <a href="{{ url_for('adm.logout') }}">Sair</a>
+
+    <div class="amostra">
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/digitama.png">
+            </div>
+            <div class="wiki">
+                <p><strong>ID:</strong> {{ adm.id }}</p>
+                <p><strong>Nome:</strong> {{ adm.nome }}</p>
+                <p><strong>Email:</strong> {{ adm.email }}</p><br>
+                <a href="{{ url_for('adm.update', id=adm.id)}}">Editar Perfil</a><br>
+                <a href='/escolha_delete'>Gerenciamento de Contas</a><br>
+                <a href="{{ url_for('adm.logout') }}">Sair</a>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

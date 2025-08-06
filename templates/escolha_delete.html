@@ -1,11 +1,33 @@
 {% extends 'base.html' %}
 
+{% block titulo %}
+    <title>Digimundo - Página Inicial</title>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='audio/bolero.mp3') }}" type='audio/mpeg'>
+    </audio>
+{% endblock %}
+
 {% block main %}
 
     <h2>Qual tipo de conta você quer deletar?</h2>
     <div class="d-flex flex-row align-items-center justify-content-center">
-        <a href="{{url_for('adm.recovery')}}" class="btn img-button digi-btn digi-img-1"></a>
-        <a href="{{url_for('usuarios.recovery')}}" class="btn img-button digi-btn digi-img-2"></a>
+        <div>
+            <a href="{{url_for('adm.recovery')}}" class="btn img-button digi-btn digi-img-1"></a>
+            <p class="subtexto">Administrador</p>
+        </div>
+        <div>
+            <a href="{{url_for('usuarios.recovery')}}" class="btn img-button digi-btn digi-img-2"></a>
+            <p class='subtexto'>Usuário</p>
+        </div>
     </div>
 
 {% endblock %}

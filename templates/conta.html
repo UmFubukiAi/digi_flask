@@ -1,11 +1,34 @@
 {% extends 'base.html' %}
 
+{% block titulo %}
+    <title>Digimundo - Página Inicial</title>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='audio/bolero.mp3') }}" type='audio/mpeg'>
+    </audio>
+{% endblock %}
+
 {% block main %}
 
     <h2>Escolha, o que quer fazer?</h2>
+
     <div class="d-flex flex-row align-items-center justify-content-center">
-        <a href="/escolha_login" class="btn img-button digi-btn digi-img-1"></a>
-        <a href="/escolha_cadastro" class="btn img-button digi-btn digi-img-2"></a>
+        <div class="foto">
+            <a href="/escolha_login" class="btn img-button digi-btn digi-img-1"></a>
+            <p class='subtexto'>Login</p>
+        </div>
+        <div>
+            <a href="/escolha_cadastro" class="btn img-button digi-btn digi-img-2"></a>
+            <p class="subtexto">Cadastro</p>
+        </div>
     </div>
 
 {% endblock %}

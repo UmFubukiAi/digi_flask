@@ -1,11 +1,38 @@
 {% extends 'base.html' %}
 
+{% block titulo %}
+    <title>Digimundo - Página Inicial</title>
+{% endblock %}
+
+{% block logo %}
+    <div class="logo">
+        <img src="../static/imgs/logo/logo.png">
+    </div>
+{% endblock %}
+
+{% block audio %}
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='audio/bolero.mp3') }}" type='audio/mpeg'>
+    </audio>
+{% endblock %}
+
 {% block main %}
 
     <h2>Perfil do Usuário</h2>
-    <p>ID: {{ usuario.id }}</p>
-    <p>Nome: {{ usuario.nome }}</p>
-    <p>Email: {{ usuario.email }}</p>
-    <a href="{{ url_for('usuarios.logout') }}">Sair</a>
+
+    <div class="amostra">
+        <div class="bloco">
+            <div class="foto">
+                <img src="../static/imgs/digitama.png">
+            </div>
+            <div class="wiki">
+                <p><strong>ID:</strong> {{ usuario.id }}</p>
+                <p><strong>Nome:</strong> {{ usuario.nome }}</p>
+                <p><strong>Email:</strong> {{ usuario.email }}</p><br>
+                <a href="{{ url_for('usuarios.update', id=usuario.id)}}">Editar Perfil</a><br>
+                <a href="{{ url_for('usuarios.logout') }}">Sair</a>
+                </div>
+        </div>
+    </div>
 
 {% endblock %}
