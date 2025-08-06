@@ -2,10 +2,10 @@
 
 {% block main %}
 
-  <h2>O que quer fazer?</h2>
-  <div class="d-flex flex-row align-items-center justify-content-center">
-    <div><a href="{{url_for('usuarios.login')}}" class="btn img-button digi-btn digi-img-1"></a></div>
-    <div><a href="{{url_for('usuarios.create')}}" class="btn img-button digi-btn digi-img-2"></a></div>
-  </div>
+    <h2>Escolha, o que quer fazer?</h2>
+    <div class="d-flex flex-row align-items-center justify-content-center">
+        <a href="/escolha_login" class="btn img-button digi-btn digi-img-1"></a>
+        <a href="/escolha_cadastro" class="btn img-button digi-btn digi-img-2"></a>
+    </div>
 
 {% endblock %}

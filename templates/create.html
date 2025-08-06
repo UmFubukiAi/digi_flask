@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 
 {% block main %}
-<form action="{{url_for('usuarios.create')}}" method="POST">
-  Nickname: <input type="text" name="nome" maxlenght="10"><br/>
-  E-mail: <input type="email" name="email" maxlenght="20"><br/>
-  Senha: <input type="password" name="senha" pattern='\d*' maxlenght="10"><br/>
-  Confirmar senha: <input type="password" name="csenha" pattern='\d*' maxlenght="10"><br/>
-  <input type="submit" name="Cadastrar">
-  <input type="reset" name="Limpar">
-</form>
+  <h2>Cadastro</h2>
+  <form method="POST">
+      Nome: <input type="text" name="nome" required maxlength="10"><br>
+      Email: <input type="email" name="email" required><br>
+      Senha: <input type="password" name="senha" class="form-control"
+      required pattern="\d{1,10}" maxlength="10"><br>
+      <button type="submit">Cadastrar</button>
+  </form>
+  <a href="{{ url_for('usuarios.recovery') }}">Voltar</a>
 {% endblock %}

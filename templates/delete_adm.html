@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+  <h2>Excluir ADM</h2>
+  <p>Tem certeza que deseja excluir o ADM {{ adm.nome }}?</p>
+  <form method="POST">
+      <button type="submit">Confirmar</button>
+      <a href="{{ url_for('adm.recovery') }}">Cancelar</a>
+  </form>
+
+{% endblock%}

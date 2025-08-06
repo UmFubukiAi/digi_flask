@@ -4,7 +4,9 @@ from utils import db
 import os
 from flask_migrate import Migrate
 from models.usuario import Usuario
-from controllers.usuario_c import bp_usuarios    
+from models.adm import Adm
+from controllers.usuario_c import bp_usuarios 
+from controllers.adm_c import bp_adm   
 from dotenv import load_dotenv
 load_dotenv(dotenv_path='config.flaskenv')
 
@@ -16,32 +18,23 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 migrate = Migrate(app, db)
 app.register_blueprint(bp_usuarios, url_prefix='/usuario')
+app.register_blueprint(bp_adm, url_prefix='/adm')
 
 @app.route('/')
 def index():
        return render_template('./index.html')
-
-@app.route('/create')
-def create():
-       return render_template('./create.html')
-@app.route('/recovery')
-def recovery():
-       return render_template('./recovery.html')
-@app.route('/update')
-def update():
-       return render_template('./update.html')
-@app.route('/login', methods=['GET','POST'])
-def login():
-       return render_template('./login.html')
-@app.route('/logout')
-def logout():
-       return render_template('./logout.html')
-@app.route('/perfil')
-def perfil():
-       return render_template('./perfil.html')
 @app.route('/conta')
 def conta():
        return render_template('./conta.html')
+@app.route('/escolha_cadastro')
+def escolha_cadastro():
+       return render_template('./escolha_cadastro.html')
+@app.route('/escolha_login')
+def escolha_login():
+       return render_template('./escolha_login.html')
+@app.route('/escolha_delete')
+def escolha_delete():
+       return render_template('./escolha_delete.html')
 
 @app.route('/adventure')
 def adventure():
@@ -143,4 +136,4 @@ def gg_digi():
        return render_template('./ghost/gg_digi.html')
 
 if __name__ == '__main__':
-       app.run(debug=True, port='3001')
+       app.run(debug=True)

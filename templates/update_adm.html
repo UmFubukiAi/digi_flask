@@ -3,11 +3,11 @@
 {% block main %}
     <h2>Atualizar Dados</h2>
     <form method="POST">
-        Nome: <input type="text" name="nome" value="{{ usuario.nome }}" required maxlength="10"><br>
-        Email: <input type="email" name="email" value="{{ usuario.email }}" required><br>
+        Nome: <input type="text" name="nome" value="{{ adm.nome }}" required maxlength="10"><br>
+        Email: <input type="email" name="email" value="{{ adm.email }}" required><br>
         Nova Senha: <input type="password" name="senha" class="form-control"
       required pattern="\d{1,10}" maxlength="10"><br>
         <button type="submit">Atualizar</button>
     </form>
-    <a href="{{ url_for('usuarios.recovery') }}">Voltar</a>
+    <a href="{{ url_for('adm.recovery') }}">Voltar</a>
 {% endblock %}

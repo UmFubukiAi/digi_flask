@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+	<h2>Lista de Adm</h2>
+	<ul>
+	{% for u in adm %}
+		<li>
+			{{ u.nome }} - {{ u.email }}
+			[<a href="{{ url_for('adm.update', id=u.id) }}">Editar</a>]
+			[<a href="{{ url_for('adm.delete', id=u.id) }}">Excluir</a>]
+		</li>
+	{% endfor %}
+	</ul>
+
+{% endblock %}

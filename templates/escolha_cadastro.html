@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    <h2>Qual tipo de conta você quer criar?</h2>
+    <div class="d-flex flex-row align-items-center justify-content-center">
+        <a href="{{url_for('adm.create')}}" class="btn img-button digi-btn digi-img-1"></a>
+        <a href="{{url_for('usuarios.create')}}" class="btn img-button digi-btn digi-img-2"></a>
+    </div>
+
+{% endblock %}

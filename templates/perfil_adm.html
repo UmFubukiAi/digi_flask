@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    <h2>Perfil do ADM</h2>
+    <p>ID: {{ adm.id }}</p>
+    <p>Nome: {{ adm.nome }}</p>
+    <p>Email: {{ adm.email }}</p>
+    <a href='/escolha_delete'>Gerenciamento de Contas</a>
+    <a href="{{ url_for('adm.logout') }}">Sair</a>
+
+{% endblock %}
